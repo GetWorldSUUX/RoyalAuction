@@ -1,4 +1,11 @@
 .main_page{
+    & > img{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
     & > .main_section{
         position: relative;
         & > .right_display{
@@ -152,6 +159,15 @@
                         margin-left: 35px;
                         display: flex;
                         align-items: center;
+                        position: relative;
+                        & > img{
+                            position: absolute;
+                            max-width: 394px;
+                            max-height: 104px;
+                            object-fit: none;
+                            object-position: top;
+                            animation: 2s ROtatee ease-in-out infinite;
+                        }
                         & > .btn_present_video{
                             width: 60px;
                             height: 60px;
