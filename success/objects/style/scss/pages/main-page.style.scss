@@ -1,0 +1,816 @@
+.main_page{
+    & > .main_section{
+        position: relative;
+        & > .right_display{
+           & >  .bg1{
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: -110px;
+           }
+           & > img{
+            position: absolute;
+            transition: .3s ease-in-out;
+            &.blur{
+                filter: blur(6px);
+            }
+            &#macbookMain{
+                right: 0;
+                top: 344px;
+                z-index: 1;
+            }
+            &#airpods_backMain{
+                right: 83px;
+                top: 423px;
+                z-index: 1;
+                animation: 6s RemoveTopBottom ease-in-out alternate infinite;
+            }
+            &#applewatchMain{
+                right: 247px;
+                top: 350px;
+                z-index: 1;
+                animation: 4s RemoveTopBottom ease-in-out alternate infinite;
+            }
+            &#bitcoinMain{
+                right: 426px;
+                top: 542px;
+                z-index: 1;
+                animation: 3s RemoveTopBottom 1s ease-in-out alternate infinite;
+            }
+            &#iphoneMain{
+                right: 344px;
+                top: 513px;
+                z-index: 1;
+                animation: 4s RemoveTopBottom 1s ease-in-out alternate infinite;
+            }
+            &#airpods_upMain{
+                right: 550px;
+                bottom: -39px;
+                z-index: 1;
+                animation: 5s RemoveTopBottom 2s ease-in-out alternate infinite;
+            }
+            &#bitcoin_sideMain{
+                right: 922px;
+                top: 809px;
+                z-index: 1;
+                animation: 5s rotateAnim 2s ease-in-out alternate infinite;
+            }
+           }
+           & > .textBackBG{
+            font-weight: 500;
+            font-size: 120px;
+            line-height: 144px;
+            letter-spacing: 0.065em;
+            color: rgba(255, 255, 255, 0.02);
+            position: absolute;
+            right: 83px;
+            bottom: -140px;
+        }
+        }
+        & > .container{
+            & > .main_block{
+                padding-top: 190px;
+                position: relative;
+                margin-top: -190px;
+                z-index: 2;
+                max-width: 718px;
+
+                & > .backgroundImages{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    & > .points{
+                        position: absolute;
+                        left: 0;
+                        top: -137px;
+                        z-index: 3;
+                    }
+                    & > .noise{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        left: 0;
+                        top: -177px;
+                        z-index: 2;
+                    }
+                    & > .blurBlock{
+                        background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                        backdrop-filter: blur(10px);
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                        position: absolute;
+                        left: 0;
+                        top: -177px;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                & > .logoText{
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    font-weight: 400;
+                    display: block;
+                    text-align: start;
+                    position: relative;
+                    z-index: 8;
+                }
+                & > h1{
+                    font-weight: 400;
+                    font-size: 44px;
+                    line-height: 135%;
+                    text-transform: uppercase;
+                    width: 1058px;
+                    margin-bottom: 60px;
+                    position: relative;
+
+                    z-index: 5;
+                    & > span{
+                        color: #8FFF00;
+                    }
+                }
+                & > .pre{
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    padding: 13px 15px;
+                    border-left: solid 2px wheat;
+                    display: inline-block;
+                    max-width: 478px;
+                    margin-bottom: 130px;
+                    position: relative;
+                    z-index: 4;
+                }
+                & > .present{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 60px;
+                    position: relative;
+                    z-index: 4;
+                    & > .present_button{
+                        margin-left: 35px;
+                        display: flex;
+                        align-items: center;
+                        & > .btn_present_video{
+                            width: 60px;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(255, 255, 255, 0.4);
+                            border-radius: 50%;
+                            position: relative;
+                            transition: .3s ease-in-out;
+                            &:hover{
+                                background: rgba(255, 255, 255, 0.568);
+                            }
+                            & > .firstLine,
+                            & > .secondLine{
+                                content: "";
+                                position: absolute;
+                                width: 60px;
+                                opacity: 0;
+                                height: 60px;
+                                background: transparent;
+                                border: solid 3px rgba(255, 255, 255, 0.836);
+                                z-index: -1;
+                                border-radius: 50%;
+                                animation: 2s PresentVideo ease-in-out infinite;
+                                filter: blur(4px);
+                            }
+                            & > .secondLine{
+                                animation: 2s PresentVideo 3s ease-in-out infinite;
+                            }
+                        }
+                        & > span{
+                            font-family: 'PROJECT SPACE';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 150%;
+                            color: #FFFFFF;
+                            display: block;
+                            margin-left: 25px;
+                        }
+                    }
+                }
+                & > .scrollButton{
+                    position: relative;
+                    z-index: 4;
+                    & > svg{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    & > .display{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: 10px;
+                        max-height: 20px;
+                        width: 100%;
+                        min-height: 20px;
+                        overflow: hidden;
+                        position: relative;
+                        left: 2.5px;
+                        & > .wrapper{
+                            position: absolute;
+                            top: -110px;
+                            transition: 1s ease-in-out;
+                            & > .cross{
+                                margin: 10px 0;
+                                width: 10px;
+                                height: 10px;
+                                min-width: 10px;
+                                min-height: 10px;
+                                border: solid 2px white;
+                                border-right: none;
+                                border-top: 0;
+                                border-radius: 3px;
+                                transform: rotate(315deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .textPre{
+                margin-top: 30px;
+                position: relative;
+                display: inline-block;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100vw;
+                    height: 1px;
+                    background: #ACACAC;
+                    left: 156px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                & > p{
+                    font-size: 17px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+
+            & > .backgroundImages{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                & > .bg1{
+                    position: absolute;
+                    bottom: -600px;
+                    right: 0;
+                }
+                & > .bg2{
+                    position: absolute;
+                    bottom: -600px;
+                }
+                & > .bg3{
+                    position: absolute;
+                    right: 0;
+                    bottom: -200px;
+                }
+            }
+        }
+    }
+
+    & > .section__hotToWork{
+        padding-top: 200px;
+        position: relative;
+        & > .bg_sc{
+            & > .bg1{
+                position: absolute;
+                right: -767px;
+                top: -150px;
+                z-index: -10;
+            }
+            & > .pointsS2{
+                position: absolute;
+                bottom: -100px;
+                right: 10%;
+                z-index: -10;
+            }
+            & > .textDec{
+                font-family: 'PROJECT SPACE';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10.3636px;
+                line-height: 14px;
+                letter-spacing: 3.45455px;
+                text-transform: uppercase;
+                color: #8FFF00;
+                transform: rotate(-90deg);
+                position: absolute;
+                right: -51px;
+                top: 964px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background: #8FFF00;
+                    width: 50px;
+                    height: 1.5px;
+                    display: block;
+                    bottom: 50%;
+                    left: -60px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        & > .container{
+            & > .step{
+                font-family: 'Krona One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 38px;
+                letter-spacing: 1.5px;
+                color: #FFFFFF;
+            }
+            & > h2{
+                max-width: 1334px;
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 174px;
+                & > .block{
+                    &:first-child{
+                        padding-left: 90px;
+                        padding-bottom: 38px;
+                        & > span, & > sup{
+                            color: #8FFF00;
+                        }
+                    }
+                    & > sup{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        position: relative;
+                        top: -22px;
+                        right: -3px;
+                    }
+                    & > span{
+                        font-weight: 300;
+                        font-size: 50px;
+                        line-height: 110%;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            & > h3{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 130px;
+            }
+
+            & > .mainBlockChanged{
+                position: relative;
+                & > .leftNav{
+                    position: absolute;
+                    left: -60px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 12;
+                    &::after{
+                        content: "";
+                        height: calc(100% + 130px);
+                        width: 2px;
+                        position: absolute;
+                        background: linear-gradient(180deg, rgba(143, 255, 0, 0) 0%, #8FFF00 51.56%, rgba(143, 255, 0, 0) 100%);
+                        filter: blur(0.5px);
+                        left: 61px;
+                        top: -71px;
+                        z-index: 1;
+                    }
+                    & > .listNav{
+                        & > li{
+                            cursor: pointer;
+                            margin-bottom: 23px;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            transition: .3s ease-in-out;
+                            z-index: 2;
+                            &:hover{
+                                transform: translateX(10px);
+                                & > p{
+                                    text-shadow: white 1px 1px 10px;
+                                    font-size: 18px;
+                                }
+                                & > .wrapper-hexagon{
+                                    & > .hexagon{
+                                        width: 25px;
+                                        height: 25px;
+                                        margin-left: 40px;
+                                        transform: rotate(90deg);
+                                    }
+                                }
+                            }
+                            &.active{
+                                & > svg{
+                                    transform: translateY(-50%);
+                                }
+                                & > p{
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                }
+                                &:hover{
+                                    cursor: default;
+                                    & > p{
+                                        text-shadow: none;
+                                    }
+                                    & > .wrapper-hexagon{
+                                        & > .hexagon{
+                                            width: 25px;
+                                            height: 25px;
+                                            margin-left: 40px;
+                                            transform: rotate(0);
+                                        }
+                                    }
+                                }
+                                & > .wrapper-hexagon{
+                                    & > .hexagon{
+                                        width: 25px;
+                                        height: 25px;
+                                        margin-left: 49px;
+                                    }
+                                }
+                            }
+                            & > .wrapper-hexagon{
+                                &.shadow{
+                                    filter: drop-shadow(0 0 10px #8FFF00);
+                                }
+                                & > .hexagon{
+                                    width: 17px;
+                                    height: 17px;
+                                    background: #8FFF00;
+                                    position: relative;
+                                    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+                                    box-shadow: 0 0 10px 10px #8FFF00 ;
+                                    margin-left: 53px;
+                                    transition: .3s ease-in-out;
+                                }
+                            }
+                            & > p{
+                                transition: .3s ease-in-out;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 40px;
+                                letter-spacing: 0.07em;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                padding-left: 17px;
+                            }
+                        }
+                    }
+                }
+                & > .rightChangedBlocks{
+                    & > div{
+                        & > .headerH2{
+                            width: 100%;
+                            height: 29px;
+                            position: relative;
+                            & > h4{
+                                font-family: 'PROJECT SPACE';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 23px;
+                                line-height: 120%;
+                                text-transform: uppercase;
+                                margin-left: 190px;
+                                color: #FFFFFF;
+                                top: 30px;
+                                transition: .3s ease-in-out;
+                                position: absolute;
+                                opacity: 0;
+                                transform: rotateX(90deg) translateY(-50px);
+                                & > span{
+                                    color: #8FFF00;
+                                }
+                                &.active{
+                                    top: 0;
+                                    transform: rotateX(0) translateY(0);
+                                }
+                            }
+                        }
+                        & > .wrapper{
+                            display: flex;
+                            & > .viwer_block{
+                                padding: 100px 358px;
+                                padding-right: 100px;
+                                position: relative;
+                                
+                                & > .mainBlock{
+                                    position: relative;
+                                    width: 348px;
+                                    height: auto;
+                                    z-index: 2;
+                                    box-shadow: 0px 4px 134px rgba(0, 0, 0, 0.55);
+                                    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(196, 196, 196, 0.1) 100%);
+                                    border-radius: 30px;
+                                    backdrop-filter: blur(25px);
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    & > .main{
+                                        margin: 10px 15px;
+                                        background: linear-gradient(0.2deg, #171A1E 0.18%, rgba(23, 26, 30, 0) 32.35%, rgba(23, 26, 30, 0) 99.83%);
+                                        border-radius: 17px;
+                                        height: 100%;
+                                        padding: 15px 18px;
+                                        & > .bg_adds{
+                                            & > div{
+                                                // global
+                                                & > div{
+                                                    opacity: 0;
+                                                    width: 9px;
+                                                    height: 9px;
+                                                    background: #8FFF00;  
+                                                    border-radius: 50%;
+                                                    position: absolute;
+
+                                                    & > .line{
+                                                        position: absolute;
+                                                    }
+                                                    &::before{
+                                                        content: "";
+                                                        height: 2px;
+                                                    }
+                                                    &::after{
+                                                        content: "";
+                                                        width: 21px;
+                                                        height: 21px;
+                                                        display: block;
+                                                        position: absolute;
+                                                        left: -6.1px;
+                                                        top: -6.6px;
+                                                        border: solid 1px #8FFF00;
+                                                        border-radius: 50%;
+                                                    }
+                                                }
+
+                                                &:first-child{
+                                                    & > div{
+                                                        opacity: 1;
+                                                        & > .line{
+                                                            left: 0;
+                                                            top: -107px;
+                                                        }
+                                                        &::before{
+                                                            width: 300px;
+                                                        }
+                                                        &.ft{
+                                                            right: 8px;
+                                                            bottom: 110px;
+                                                        }
+                                                        &.st{
+                                                            bottom: 87px;
+                                                            right: 13px;
+                                                            & > .line{
+                                                                transform: rotate(80deg);
+                                                                top: 10px;
+                                                                left: 10px;
+                                                            }
+                                                        }
+
+                                                    }
+                                                }
+
+                                            }
+                                            
+                                        }
+                                        & > .header{
+                                            height: 34px;
+                                            width: 100%;
+                                            margin-bottom: 10px;
+                                        }
+                                        & > .prewie{
+                                            height: 248px;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        & > .bottom{
+                                            & > .price_wrapper{
+                                                margin-bottom: 26px;
+                                                & > .prestatus{
+                                                    & > .price{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        align-items: flex-end;
+                                                        & > svg{
+                                                            &:first-child{
+                                                                margin-bottom: 7px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            & > .nameWrapper{
+                                                & > .name{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    margin-bottom: 10px;
+                                                    & > h3{
+                                                        font-family: 'Inter', sans-serif;
+                                                    }
+                                                }
+                                                & > .free{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    font-family: 'Inter', sans-serif;
+                                                    font-size: 13px;
+                                                    color: rgba(255, 255, 255, 0.39);
+                                                    margin-bottom: 10px;
+                                                }
+                                            }
+                                            & > .blocks{
+                                                & > div{
+                                                    transition: .3s ease-in-out;
+                                                }
+                                                & > .enterWrapper{
+                                                    & > .start{
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        margin-bottom: 10px;
+                                                        & > .label{
+                                                            font-family: 'Inter', sans-serif;
+                                                            font-size: 15px;
+                                                        }
+                                                        & > .timeWrapper{
+                                                            display: flex;
+                                                            align-items: center;
+                                                            & > .date{
+                                                                font-family: 'Inter', sans-serif;
+                                                                font-size: 13px;
+                                                            }
+                                                            & > .time{
+                                                                font-family: 'Inter', sans-serif;
+                                                                font-size: 13px;
+                                                                margin-left: 15px;
+                                                            }
+                                                        }
+                                                    }
+                                                    & > .buttonWrapper{
+                                                        & > button{
+                                                            & > .clickedAnim{
+                                                                position: absolute;
+                                                                left: 40px;
+                                                                bottom: 39px;
+                                                                & > .line{
+                                                                    &:nth-child(1){
+                                                                        animation: 3s clientClickedLine ease-in-out infinite;
+                                                                    }
+                                                                    &:nth-child(2){
+                                                                        animation: 3s clientClickedLine 1s ease-in-out infinite;
+                                                                    }
+                                                                    &:nth-child(3){
+                                                                        animation: 3s clientClickedLine 2s ease-in-out infinite;
+                                                                    }
+                                                                    &:nth-child(4){
+                                                                        animation: 3s clientClickedLine 3s ease-in-out infinite;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & > .startTimer{
+                                                    display: none;
+                                                    opacity: 0;
+                                                    & > .timerWrapper{
+                                                        padding: 10px 15px; 
+                                                        background: #13161A;
+                                                        border-radius: 10px;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                        & > .label{
+                                                            font-size: 15px;
+                                                            font-family: 'Inter', sans-serif;
+                                                        }
+                                                        & > .time{
+                                                            display: flex;
+                                                            align-items: center;
+                                                            & > span{
+                                                                font-size: 15px;
+                                                                font-family: 'Inter', sans-serif;
+                                                                margin-right: 5px;
+                                                            }
+                                                        }
+                                                    }
+                                                    & > .buttonWrapper{
+                                                        & > button{
+                                                            margin-top: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & > .bg{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        z-index: -2;
+                                        height: 100%;
+                                        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(196, 196, 196, 0.1) 100%);
+                                        box-shadow: 0px 4px 134px rgba(0, 0, 0, 0.55), inset 0px 14px 44px rgba(255, 255, 255, 0.1);
+                                        backdrop-filter: blur(25px);
+                                        border-radius: 30px;
+                                    }
+                                }
+                                & > .bg_rep{
+                                    & > .bg1{
+                                        position: absolute;
+                                        left: 440px;
+                                        top: 36px;
+                                        z-index: 1;
+                                    }
+                                }
+                            }
+                            & > .infoBlock{
+                                display: flex;
+                                padding-bottom: 70px;
+                                position: relative;
+                                height: 563px;
+                                width: 100%;
+                                & > div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-end;
+                                    max-width: 371px;
+                                    &:first-child{
+                                        display: flex;
+                                        & > .wrapper{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        & > .wrapper:first-child{
+                                            top: 20%;
+                                        }
+                                        & > .wrapper:nth-child(2){
+                                            top: 50%;
+                                        }
+                                        & > .wrapper:last-child{
+                                            top: 80%;
+                                            bottom: auto;
+                                        }
+                                    }
+                                    &:nth-child(3){
+                                        & > .wrapper:first-child{
+                                            top: 50%;
+                                        }
+                                    }
+                                    &:nth-child(4){
+                                        & > .wrapper:first-child{
+                                            top: 20%;
+                                        }
+                                        & > .wrapper:last-child{
+                                            top: 80%;
+                                        }
+                                    }
+                                    & > .wrapper{
+                                        transform: translateY(-10px);
+                                        transition: .5s;
+                                        opacity: 0;
+                                        &:last-child{
+                                            bottom: -116px;
+                                        }
+                                        position: absolute;
+                                        &:last-child{
+                                            margin-bottom: 0;
+                                        }
+                                        & > h3{
+                                            font-weight: 400;
+                                            font-size: 24px;
+                                            line-height: 120%;
+                                            color: #FFFFFF;
+                                            margin-bottom: 10px;
+                                        }
+                                        & > p{
+                                            font-weight: 300;
+                                            font-size: 16px;
+                                            line-height: 140%;
+                                            color: #FFFFFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
